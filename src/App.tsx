@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import ConnectionPage from "./pages/ConnectionPage";
+import HardCodedPage from "./pages/HardCodedPage";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app bg-gray-800 h-full overflow-auto text-white">
+      <ConnectionPage />
+      {/* <HardCodedPage /> */}
     </div>
   );
-}
+};
 
 export default App;
